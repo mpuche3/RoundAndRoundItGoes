@@ -74,3 +74,13 @@ function initialize() {
 function next(p, u, ang) {
     return [p[0]+(u[0]*Math.cos(ang)-u[1]*Math.sin(ang)),p[1]+(u[0]*Math.sin(ang)+u[1]*Math.cos(ang))]
 }
+
+function downloadCanvas(link, canvasId, filename) {
+    link.href = document.getElementById(canvasId).toDataURL();
+    link.download = filename;
+}
+
+document.getElementById('myCanvas').addEventListener('click', function() {
+    downloadCanvas(document.getElementById('download'), 'myCanvas', 'test.png');
+    document.getElementById("download").click();
+}, false);
