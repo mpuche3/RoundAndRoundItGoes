@@ -22,6 +22,8 @@ function initialize() {
     l3 = 10
     canvas.width = window.innerWidth;
     canvas.height = window.innerHeight;
+    //context.clearRect(0, 0, canvas.width, canvas.height);
+    context.strokeRect(0, 0, window.innerWidth, window.innerHeight);
     context.fillStyle="#000000";
     context.fillRect(0,0,window.innerWidth, window.innerHeight);
     context.strokeStyle = "blue";
