@@ -10,8 +10,7 @@ initialize();
 
 
 function initialize() {
-    context.fillStyle="#000000";
-    context.fillRect(0,0,window.innerWidth, window.innerHeight);
+
     //window.addEventListener("resize", resizeCanvas, false);
     i = Math.floor((Math.random() * 1) + 2.5);
     f1 = Math.floor((Math.random() * 30) + 1);
@@ -23,6 +22,8 @@ function initialize() {
     l3 = 10
     canvas.width = window.innerWidth;
     canvas.height = window.innerHeight;
+    context.fillStyle="#000000";
+    context.fillRect(0,0,window.innerWidth, window.innerHeight);
     context.strokeStyle = "blue";
     context.lineWidth = "1";
     //context.clearRect(0, 0, canvas.width, canvas.height);
