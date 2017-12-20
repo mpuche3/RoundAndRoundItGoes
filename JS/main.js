@@ -10,6 +10,8 @@ initialize();
 
 
 function initialize() {
+    context.fillStyle="#000000";
+    context.fillRect(0,0,window.innerWidth, window.innerHeight);
     //window.addEventListener("resize", resizeCanvas, false);
     i = Math.floor((Math.random() * 1) + 2.5);
     f1 = Math.floor((Math.random() * 30) + 1);
