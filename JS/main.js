@@ -27,7 +27,7 @@ function initialize() {
     context.fillStyle="#000000";
     context.fillRect(0,0,window.innerWidth, window.innerHeight);
     context.strokeStyle = "blue";
-    context.lineWidth = "5";
+    context.lineWidth = "10";
     //context.clearRect(0, 0, canvas.width, canvas.height);
     //context.strokeRect(0, 0, window.innerWidth, window.innerHeight);
     let n = 0;
