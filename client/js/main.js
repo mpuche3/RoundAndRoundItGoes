@@ -1,13 +1,8 @@
 
-
-
-
-let canvas = document.getElementById("myCanvas");
-let context = canvas.getContext("2d");
+const canvas = document.getElementById("myCanvas");
+const context = canvas.getContext("2d");
 
 initialize();
-
-
 
 function initialize() {
 
@@ -72,7 +67,7 @@ function initialize() {
 
 
 function next(p, u, ang) {
-    return [p[0]+(u[0]*Math.cos(ang)-u[1]*Math.sin(ang)),p[1]+(u[0]*Math.sin(ang)+u[1]*Math.cos(ang))]
+    return [p[0]+(u[0]*Math.cos(ang)-u[1]*Math.sin(ang)),p[1]+(u[0]*Math.sin(ang)+u[1]*Math.cos(ang))];
 }
 
 function downloadCanvas(link, canvasId, filename) {
